@@ -1,0 +1,80 @@
+/* src/components/BookConsultationForm.css */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@font-face {
+    font-family: CostaNova;
+    src: url(../fonts/CostaNova.otf);
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+}
+  
+.custom-submit-btn {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.25rem;
+    font-weight: 600;
+    color:#000;
+    text-transform: uppercase;
+
+    border-radius: 0;
+    background-color: #ffffff;
+    border-color: #000;
+}
+  
+.custom-submit-btn:hover {
+    color: white;
+
+    background-color: #000000;
+    border-color: #000000;
+}
+  
+h1 {
+    font-family: CostaNova;
+    font-size: 4rem;
+    color: #000;
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+}
+
+label {
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-transform: uppercase;
+
+    display: block;
+}
+
+label.required::after {
+    content: '*';
+    color: red;
+}
+
+.custom-input {
+    font-size: 1rem;
+
+    border-radius: 0;
+    border: 1px solid #7A7A7A;
+
+    padding: 0.5rem;
+    
+}
+  
+.custom-input:focus {
+    border-color: #000000;
+    box-shadow: 0 0 0 0.2rem rgba(173, 173, 173, 0.25);
+}
+
+.summary-box {
+    border: 1px solid #000000;
+
+    padding: 25px;
+}
+
+.form-data {
+    font-weight: 300;
+}

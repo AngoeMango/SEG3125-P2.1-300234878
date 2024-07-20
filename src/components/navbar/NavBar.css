@@ -1,0 +1,85 @@
+/* NavBar.css */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+.navbar {
+    padding: 1rem 2rem;
+}
+
+.navbar-collapse {
+	justify-content: flex-end !important; /* Ensure flex-end is applied */
+}
+  
+.nav-link {
+	display: inline-block;
+  	position: relative;
+    margin-left: 2rem;
+	margin-right: 2rem;
+    
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    color: #000000;
+    font-weight: 600;
+    text-transform: uppercase;
+	text-decoration: none;
+
+	transition: color 0.3s;
+}
+
+.nav-link::after {
+	content: '';
+	position: absolute;
+	width: 100%;
+	transform: scaleX(0);
+	height: 2px;
+	bottom: 0;
+	left: 0;
+	background-color: #000000;
+	transform-origin: bottom right;
+	transition: transform 0.25s ease-out;
+}
+  
+.nav-link:hover::after {
+	transform: scaleX(1);
+  transform-origin: bottom left;
+}
+  
+.navbar-brand img {
+    width: 50px; /* Adjust the size as needed */
+    height: auto;
+}
+  
+.navbar-toggler {
+	border-color: rgba(0, 0, 0, 0.1);
+}
+  
+.navbar-toggler-icon {
+	color: #000;
+}
+
+.nav-item.dropdown .dropdown-menu {
+	display: none;
+  }
+  
+.nav-item.dropdown:hover .dropdown-menu {
+	display: block;
+	margin-top: 0; /* Adjust as needed */
+}
+
+.nav-item.dropdown .nav-link.dropdown-toggle::after {
+	display: none; /* Removes the default caret icon */
+}
+  
+.dropdown-menu {
+	color: #000000;
+	font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+
+	background-color: #f0f0f0;
+	margin-top: 0;
+	padding: 0;
+	border: none;
+}
+  
+.nav-item.dropdown {
+	position: relative;
+}

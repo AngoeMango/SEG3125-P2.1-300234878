@@ -1,0 +1,16 @@
+/* src/components/Collections.css */
+
+.collections-gallery {
+    padding: 20px;
+}
+  
+.collection-section {
+    margin-bottom: 50px;
+}
+  
+.carousel .carousel-item img {
+    height: 200px;
+    width: 300px;
+    object-fit: cover;
+}
+  

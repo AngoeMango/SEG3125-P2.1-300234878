@@ -1,0 +1,61 @@
+/* src/components/Footer.css */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    font-family: 'Roboto', sans-serif;
+    background-color: #000;
+    color: #fff;
+    font-weight: 600;
+    font-size: 12px;
+
+    flex-wrap: wrap;
+
+    padding-left: 25px;
+    padding-right: 25px;
+    margin-top: 50px;
+}
+  
+.footer-section {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+  
+.footer-section ul li {
+    margin: 5px 0;
+}
+  
+.footer-center {
+    text-align: center;
+    flex: 1;
+}
+  
+.footer-logo {
+    width: 50px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.footer-link {
+    color: #fff;
+    text-decoration: none;
+}
+  
+.footer-link:hover {
+    text-decoration: underline;
+}
+
+.footer-officehours {
+    font-weight: 300;
+}
+  

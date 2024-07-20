@@ -1,0 +1,29 @@
+/* src/components/Fabrics.css */
+
+.fabrics-gallery {
+    padding: 0rem 0rem;
+}
+  
+.fabric-card {
+    color: #000;
+
+    border-color: #000000;
+    border-radius: 0;
+
+    padding: 20px;
+
+    transition: transform 0.2s;
+}
+  
+.fabric-card:hover {
+    transform: scale(1.05);
+}
+
+.body {
+    font-weight: 300;
+}
+
+.subtitle {
+    font-weight: 300;
+}
+  
